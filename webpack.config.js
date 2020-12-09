@@ -132,8 +132,8 @@ module.exports = {
     entry:
       { 'main':path.resolve(__dirname, './src/assets/js/index.js'),},
     output: {
-        filename: 'js/[name].js',
         path: path.resolve(__dirname, 'dist'),
+        filename: 'js/[name].js',
         chunkFilename: 'js/chunks/[id].js',
     },
     resolve: {
@@ -182,8 +182,9 @@ module.exports = {
                     {
                         loader: 'file-loader',
                         options: {
-                            name: '../[path][name].[ext]',
-                            include: [/fonts/]
+                            name: '[name].[ext]',
+                            outputPath: 'fonts/',
+                            include: [/assets/]
                         },
                     },
                 ]
