@@ -1,0 +1,80 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    &.no-scroll {
+        overflow: hidden;
+    }
+
+    * {
+        box-sizing: inherit;
+    }
+}
+
+
+header {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 18;
+
+}
+
+footer {
+    background-color: var(--bgFooter);
+}
+
+body {
+
+    background: var(--bgBannerColor);
+    &.fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.container {
+    position: relative;
+
+    max-width: 1240px;
+    height: 100%;
+
+    margin: 0 auto;
+    //padding: 0 100px;
+    padding: 0 15px;
+
+    &--nav {
+        max-width: 1920px;
+        height: 100%;
+
+        padding: 0 40px;
+    }
+}
+//.side-bar {
+//    padding: 30px 100px;
+//}
+.container-fluid {
+    padding: 0;
+}
+
+.main-wrapper {
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+

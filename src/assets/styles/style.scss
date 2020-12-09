@@ -1,0 +1,22 @@
+//style.scss
+@import 'src/assets/styles/theme';
+
+@import 'global/mixins/mixins';
+@import 'global/media/media';
+@import 'global/typo/typo';
+@import 'global/typo/button';
+
+@import 'global/base/base';
+@import 'global/base/section';
+@import 'global/variable/variables';
+@import 'global/fonts/fonts';
+
+@import 'header/header';
+@import 'banner/banner';
+@import 'getStarted/getStarted';
+@import 'workflows/workflows';
+@import 'bluetooth/bluetooth';
+@import 'howItWorks/howItWorks';
+@import 'options/options';
+@import 'contactUs/contactUs';
+@import 'footer/footer';

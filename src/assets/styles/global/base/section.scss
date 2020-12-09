@@ -1,0 +1,54 @@
+.section {
+  padding-bottom: 50px;
+  padding-top: 50px;
+  @include media-to(xl-less) {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+
+  &--banner {
+    min-height: 791px;
+    margin: 0 auto;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    @include media-to(xl-less) {
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+  }
+  &--short-info {
+    background-color: var(--bgGraynLightSection);
+    padding-bottom: 10px;
+    padding-top: 25px;
+    @include media-to(xl-less) {
+      padding-bottom: 10px;
+      padding-top: 20px;
+    }
+  }
+  &--get-started {
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+  &--workflows {}
+  &--bluetooth {
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  &--howItWorks {}
+  &--options {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  &--contactUs {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+}

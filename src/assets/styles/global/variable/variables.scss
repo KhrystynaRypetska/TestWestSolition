@@ -1,0 +1,7 @@
+//@import "src/styles/theme";
+
+:root {
+    @each $key, $value in $theme {
+        #{'--' + unquote($key)}: $value;
+    }
+}
