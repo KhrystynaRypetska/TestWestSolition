@@ -1,147 +1,59 @@
+
 .footer {
-  padding: 50px 0;
-
-  svg {
-    path {
-      fill: var(--textLight);
-    }
-  }
-
-  &_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--sectionCollor);
+  width: 100%;
+  .logo {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
+    max-width: 39px;
+    max-height: 31px;
     width: 100%;
     height: 100%;
-  }
-
-  &_copy {
-    display: flex;
-    align-self: flex-start;
-    flex-direction: column;
-    margin-top: 40px;
-  }
-
-  &_info {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
-    position: relative;
-    width: 100%;
-    @include media-to(l-less) {
-      flex-direction: column;
-      justify-content: flex-start;
-    }
-
-    &:after {
-      content: '';
-      position: absolute;
-      display: block;
+    >a {
       width: 100%;
-      height: 1px;
-      left: 0;
-      bottom: -20px;
-      background-color: var(--footerCopy);
-    }
-  }
-
-  &_container {
-    height: 100%;
-  }
-
-  &_img {
-    display: flex;
-    align-items: center;
-
-    img {
-      width: 100px;
       height: 100%;
     }
   }
-
-  .button {
-    &_img {
-      svg {
-        display: inline-block;
-        margin-bottom: 3px;
-
-        path {
-          fill: var(--collorHover);
-        }
-      }
-    }
+  &_police,
+  &_nav_item {
+    font-family: var(--SegoeUIRegular);
+    font-size: 14px;
+    color: var(--footerNav);
   }
-
-  button {
-    border: 1px solid var(--collorHover);
-    border-radius: 22px;
-    background-color: transparent;
-
-    &:hover,
-    &:active,
-    &:focus {
-      outline: none;
-      background-color: transparent !important;
-      border: 1px solid var(--collorHover) !important;
-    }
-
-  }
-
-  &_navigation {
+  &_nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    @include media-to(m-less) {
-      display: flex;
-      flex-direction: column;
+    list-style-type: none;
+    margin: 30px 0;
+    @include media-to(sm-plus) {
+      margin-top: 0;
     }
-
-    &_list {
+    @include media-to(m-plus) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &_item {
+      margin-right: 60px;
+      &:last-child {
+        margin-right: 0;
+      }
+      @include media-to(m-plus) {
+        margin-right: 20px;
+      }
       @include media-to(sm-plus) {
-        display: flex;
-        //flex-direction: column;
-        flex-wrap: wrap;
-        padding: 15px 0;
-      }
-
-      &-item {
-        background-color: transparent;
-        border: none;
-        padding: 0;
-
-        &:hover {
-          a {
-            color: var(--collorHover);
-          }
-        }
+       margin-top: 30px;
       }
     }
   }
-
-  .mainTextLight {
-    padding-right: 10px;
-  }
-
-  &_button_img {
-    svg {
-      path {
-        fill: var(--textLight);
-      }
+  &_network {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    &_item {
+      margin-right: 14px;
     }
   }
-
-  button {
-    border: 1px solid var(--textLight);
-
-    &:focus,
-    &:active {
-      outline: none;
-      border: 1px solid var(--textLight) !important;
-      box-shadow: none;
-    }
-  }
-
 }

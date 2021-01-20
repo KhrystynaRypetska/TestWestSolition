@@ -1,54 +1,76 @@
 .banner {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  min-height: 791px;
-
-
-.text {
-  max-width: 650px;
-
-}
-  &_text {
+  align-items: flex-start;
+  justify-content: flex-end;
+  @include media-to(l-plus) {
+    align-items: center;
+    justify-content: center;
+  }
+  &_wrapper {
     display: flex;
-  }
-  &_subtitle {
-    margin-top: 25px;
-    margin-bottom: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 471px;
+    width: 100%;
   }
 
-&_button {
-  display: flex;
-  align-items: center;
-  @include media-to(sm-less) {
-    flex-direction: column;
-    .main-button {
-      margin-top: 20px;
+  &_title {
+    font-family: var(--SegoeUIBold);
+    font-size: 69px;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: 1.1px;
+    color: var(--colorText);
+    @include media-to(l-plus) {
+      font-size: 35px;
     }
   }
-}
-  &_img {
-    display: block;
-    position: absolute;
-    top: 15%;
-    right: 20%;
-    //width: 1055px;
 
+  &_subtitle {
+    font-family: var(--SegoeUIRegular);
+    font-size: 37px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.66;
+    letter-spacing: 3.7px;
+    color: var(--colorText);
+    padding-bottom: 12px;
+  }
+
+  &_text {
+    font-family: var(--SegoeUIRegular);
+    font-size: 19px;
+    line-height: 1.68;
+    color: var(--colorText);
+    padding-top: 30px;
+    padding-bottom: 39px;
+  }
+
+  &_button {
+    max-width: 172px;
+    min-height: 43px;
     width: 100%;
     height: 100%;
-    max-width: 450px;
-    max-height: 450px;
+    background-color: var(--hoverCollor);
+    border: none;
 
-    padding-bottom: 37.1%;
-    z-index: -1;
+    a {
+      font-family: var(--SegoeUIRegular);
+      font-size: 18px;
+      letter-spacing: 0.18px;
+      text-align: left;
+      text-decoration: none;
+      color: var(--colorText);
+    }
 
-    box-shadow: 1px 1px 12px #f6f5f2;
+    button {
+      border: none;
 
-    img {
-      position: absolute;
-      width: auto;
-      height: 100%;
+      &:focus {
+        outline: none;
+      }
     }
   }
 }

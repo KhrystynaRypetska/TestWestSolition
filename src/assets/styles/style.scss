@@ -1,3 +1,8 @@
+//@import '~normalize.css';
+@import "~normalize.css/normalize.css";
+@import '~reset-css';
+@import 'fonts.css';
+
 //style.scss
 @import 'src/assets/styles/theme';
 
@@ -8,15 +13,14 @@
 
 @import 'global/base/base';
 @import 'global/base/section';
-@import 'global/fonts/fonts';
+//@import 'global/fonts/fonts';
 @import 'global/variable/variables';
 
 @import 'header/header';
 @import 'banner/banner';
-@import 'getStarted/getStarted';
-@import 'workflows/workflows';
-@import 'bluetooth/bluetooth';
-@import 'howItWorks/howItWorks';
-@import 'options/options';
-@import 'contactUs/contactUs';
-@import 'footer/footer';
+@import 'about-us/about-us';
+@import 'project/project';
+@import 'clients/clients';
+
+
+@import './footer/footer';
